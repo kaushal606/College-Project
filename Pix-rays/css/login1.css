@@ -1,0 +1,109 @@
+html,
+body {
+  background-image: url(../img/login3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+  
+}
+
+.btn{
+  -webkit-box-shadow: 0px 7px 19px 5px rgba(0,0,0,0.41);
+-moz-box-shadow: 0px 7px 19px 5px rgba(0,0,0,0.41);
+box-shadow: 0px 7px 19px 5px rgba(0,0,0,0.41);
+}
+
+.login {
+ 
+ padding: 20px 20px; 
+
+ -webkit-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.62);
+-moz-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.62);
+box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.62);
+  
+}
+.login .checkbox {
+  font-weight: 500;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 15px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.mt-5, .my-5 {
+    margin-top: 1.5rem!important;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1.2rem!important;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #fff;
+}
+
+.sk-spinner-pulse {
+  width: 100px;
+  height: 100px;
+  background-color: #16a737;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }

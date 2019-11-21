@@ -1,0 +1,81 @@
+<?php
+
+session_start();
+
+?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/login.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center" onload="myfunction()">
+    <!-- Preloader -->
+
+    <div id="preloader">
+
+  <div class="sk-spinner sk-spinner-pulse"></div>
+
+</div> 
+     <!-- <?php
+      if (isset($_SESSION['userid'])) {
+      echo '<p>you are logged in..</p>';
+      }
+    ?> -->   
+    <form class="form-signin" action="login.inc.php" method="post" style="background-color: rgba(79, 114, 239, 0.5);">
+      <i class="fas fa-user-edit fa-3x" style="color: black;"></i>
+      <h1 class="h3 mb-3 font-weight-normal" style="color: black;">Please Login</h1>
+      <label for="inputEmail" class="sr-only">Username</label>
+      <input type="username" id="username" class="form-control" name="username" placeholder="Username" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-success btn-block" type="submit" name="login-submit">Login</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+    </form>  
+
+    <!-- preloader script -->
+    <script src="js/sweetalert.min.js"></script>
+    <script> 
+      
+           
+      swal({
+                title: "Thank you!",
+                text: "You have been registered successfully!",
+                icon: "success",
+                button: "Okay",
+                });  
+      
+
+     <script> 
+
+      var preloader = document.getElementById('preloader')
+
+      function myfunction(){
+
+        preloader.style.display = 'none';
+
+      }
+
+    </script>
+
+  </body>
+</html>
